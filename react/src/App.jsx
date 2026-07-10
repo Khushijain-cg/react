@@ -13,6 +13,10 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/nav" element={<Nav name="Navigation" />}></Route>
+      <Route path="/about" element={<div>About Page</div>}></Route>
+      <Route path="/services" element={<div>Services Page</div>}></Route>
+      <Route path="/contact" element={<div>Contact Page</div>}></Route> 
       <Route 
 path="/" element={
     <>
@@ -23,7 +27,6 @@ path="/" element={
       <button onClick={Decrement}>Decrement</button>
     </>}
     ></Route>
-    <Route path="/nav" element={<Nav name="Navigation" />}></Route>
     </Routes>
   )
 }
